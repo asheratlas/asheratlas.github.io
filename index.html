@@ -132,7 +132,7 @@
             <div class="cs-content">
               <div class="cs-section">
                 <h4 class="cs-section-title">Problem</h4>
-                <p>We were launching the first-ever music livestreaming commerce platform with no users, no infrastructure, and no playbook. Midway through, internal load testing triggered by my own concerns revealed the platform would fail under festival traffic — and leadership resisted changing priorities.</p>
+                <p>We were launching the first-ever music livestreaming commerce platform with no users, no infrastructure, and no playbook. Midway through, load testing I initiated revealed the platform would collapse under festival traffic — and leadership didn't want to slow down to fix it.</p>
               </div>
               <div class="cs-section">
                 <h4 class="cs-section-title">The Hard Call</h4>
@@ -141,11 +141,11 @@
               <div class="cs-section">
                 <h4 class="cs-section-title">What I Did</h4>
                 <ul class="cs-list-items">
-                  <li>Shipped the 0→1 livestream commerce platform: concept → live events → 100+ events, zero downtime</li>
-                  <li>Initiated load testing based on stakeholder estimates, found 2K cap with 8K expected</li>
-                  <li>Built internal alignment to push roadmap reprioritization against executive resistance</li>
-                  <li>Launched the Zoom Wall experiment: taped fan photos to a wall behind the artist to simulate virtual crowd energy; it validated the emotional gap before building Artist View</li>
-                  <li>Shipped Artist View: curated real-time fan message overlay for artists mid-performance</li>
+                  <li>Shipped the 0→1 platform: concept → 100+ live events with integrated ticketing, merch, and artist tooling</li>
+                  <li>Initiated load testing against stakeholder traffic estimates — found a 2K ceiling with 8K expected at peak</li>
+                  <li>Built the internal case for reprioritization and drove alignment against executive resistance to delay new features</li>
+                  <li>Led the infrastructure scaling work alongside engineering, increasing capacity 4x before the festival deadline</li>
+                  <li>Shipped Artist View — real-time fan message overlay during performances — based on direct artist feedback about feeling disconnected from the virtual crowd</li>
                 </ul>
               </div>
               <div class="cs-outcome">
@@ -153,8 +153,8 @@
                 <div class="outcome-chips">
                   <span class="outcome-chip">Scaled 2K → 8K concurrent viewers</span>
                   <span class="outcome-chip">Zero downtime across 3-day festival</span>
-                  <span class="outcome-chip">Two new major concert deals</span>
-                  <span class="outcome-chip">Chat engagement 25% → 80%</span>
+                  <span class="outcome-chip">Two new major concert deals signed</span>
+                  <span class="outcome-chip">Fan engagement 25% → 80%</span>
                 </div>
               </div>
             </div>
@@ -183,27 +183,27 @@
             <div class="cs-content">
               <div class="cs-section">
                 <h4 class="cs-section-title">Problem</h4>
-                <p>Board game discovery is messy — data is inconsistent, player constraints vary widely, and LLMs hallucinate when metadata is incomplete. I needed a system that could take vague inputs ("something fun for 5 players that's not too long") and return grounded, reliable suggestions.</p>
+                <p>Board game recommendations are genuinely hard. Player constraints are complex and contextual ("something for 5 people, not too long, my group hates trading"). LLMs hallucinate on incomplete metadata. And users don't trust suggestions that feel mechanically correct but miss the actual situation. Generic AI recommendations weren't solving this.</p>
               </div>
               <div class="cs-section">
                 <h4 class="cs-section-title">The Hard Call</h4>
-                <p>After shipping V1, I ran user tests and discovered the core assumption was wrong. I'd built a social recommendation system ("what other people liked") when users actually needed personal constraint matching ("what works for my group tonight"). Rather than patch V1, I rebuilt the architecture from scratch.</p>
+                <p>After shipping V1 — a 5-node hybrid pipeline — user testing revealed it was matching, not reasoning. It could filter by player count and game length, but it couldn't interpret the intent behind a contextual request. Rather than patch V1, I rebuilt around a dedicated reasoning layer: a specialized Intent Interpreter node that reasons through the user's request before any matching happens.</p>
               </div>
               <div class="cs-section">
                 <h4 class="cs-section-title">What I Did</h4>
                 <p class="cs-phase-label">Architecture</p>
                 <ul class="cs-list-items">
-                  <li>V1: Built a full retrieval and reasoning pipeline (Flowise + GPT-4o-mini). Shipped, tested, discovered the core assumptions were wrong.</li>
-                  <li>Ran a 6-model head-to-head evaluation (latency, cost, consistency, reasoning quality) before committing to V2 stack</li>
-                  <li>V2: Redesigned as a 7-node hybrid pipeline: 5 deterministic constraint nodes (player count, complexity, game type, edition rules, catalog validation) + 2 LLM reasoning nodes</li>
-                  <li>Applied RICE prioritization under real cost constraints — cut scope to what moved the needle</li>
-                  <li>Built metadata enrichment flow to clean inconsistent fields and reduce hallucinations before LLM reasoning</li>
+                  <li>V1: Built a 5-node hybrid pipeline combining deterministic constraint filters with LLM result formatting. Shipped and tested.</li>
+                  <li>Identified that V1 matched on surface keywords but didn't reason — it couldn't understand the tradeoffs behind a complex, contextual request</li>
+                  <li>Ran a structured 6-model evaluation before committing to V2 — selected on failure mode severity, not benchmark scores</li>
+                  <li>V2: Added a dedicated Intent Interpreter node to reason through user requests before passing to the matching pipeline — separating understanding from retrieval</li>
+                  <li>Built a multi-model metadata enrichment pipeline to clean inconsistent fields across the catalog, reducing hallucinations at the reasoning stage</li>
                 </ul>
-                <p class="cs-phase-label">Validation &amp; Prioritization</p>
+                <p class="cs-phase-label">Validation</p>
                 <ul class="cs-list-items">
-                  <li>Discovered Discord/BGG beta testing was generating 100% S4/S5 signal; rebuilt user segmentation from 3 coarse buckets to a 6-segment framework with documented mental models, prompt patterns, and trust signals per segment</li>
-                  <li>Classified the full prompt log and bug backlog by actual target segment; built Bucket A/B triage: S3-affecting failures fix immediately, S4/S5-specific failures deprioritized from Day 1, redirecting ~40% of planned work</li>
-                  <li>Switched validation to Reddit r/boardgames; first round returned immediate positive S3 response and surfaced real gaps that Discord feedback had masked</li>
+                  <li>Discovered that all early beta testers were power users — not the casual players I was building for — and their feedback was pushing me to solve the wrong problems</li>
+                  <li>Rebuilt validation around the actual target audience; redirected ~40% of planned bug fixes that only affected power-user edge cases</li>
+                  <li>First round of casual-player testing returned immediate positive signal and surfaced real gaps the power-user feedback had masked</li>
                 </ul>
               </div>
               <div class="cs-outcome">
@@ -212,13 +212,12 @@
                   <span class="outcome-chip">78% latency reduction</span>
                   <span class="outcome-chip">65% cost reduction</span>
                   <span class="outcome-chip">100% recommendation consistency</span>
-                  <span class="outcome-chip">99.75% data transfer reduction</span>
-                  <span class="outcome-chip">Immediate positive S3 signal on first Reddit round</span>
+                  <span class="outcome-chip">Immediate positive signal from target casual players</span>
                 </div>
               </div>
               <div class="cs-section cs-skills">
                 <span class="cs-skill-label">Skills:</span>
-                <span>AI System Design · Hybrid Architecture · Metadata Modeling · Cost Optimization · Iterative Product Development</span>
+                <span>AI System Design · Hybrid Architecture · Reasoning Pipeline Design · User Segmentation · Iterative Product Development</span>
               </div>
             </div>
           </div>
