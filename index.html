@@ -145,7 +145,6 @@
                   <li>Initiated load testing against stakeholder traffic estimates — found a 2K ceiling with 8K expected at peak</li>
                   <li>Built the internal case for reprioritization and drove alignment against executive resistance to delay new features</li>
                   <li>Led the infrastructure scaling work alongside engineering, increasing capacity 4x before the festival deadline</li>
-                  <li>Shipped Artist View — real-time fan message overlay during performances — based on direct artist feedback about feeling disconnected from the virtual crowd</li>
                 </ul>
               </div>
               <div class="cs-outcome">
@@ -154,7 +153,6 @@
                   <span class="outcome-chip">Scaled 2K → 8K concurrent viewers</span>
                   <span class="outcome-chip">Zero downtime across 3-day festival</span>
                   <span class="outcome-chip">Two new major concert deals signed</span>
-                  <span class="outcome-chip">Fan engagement 25% → 80%</span>
                 </div>
               </div>
             </div>
@@ -171,7 +169,7 @@
                 <span class="cs-tag">Cost Discipline</span>
               </div>
               <h3 class="cs-title">Atlas Realms — AI Recommendation System (V2)</h3>
-              <p class="cs-oneliner">Built an AI recommendation engine from scratch, discovered the wrong assumption at its core, and rebuilt it better.</p>
+              <p class="cs-oneliner">Built an AI recommendation engine, discovered two wrong assumptions simultaneously, and rebuilt both.</p>
             </div>
             <span class="cs-toggle" aria-hidden="true">
               <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -187,7 +185,7 @@
               </div>
               <div class="cs-section">
                 <h4 class="cs-section-title">The Hard Call</h4>
-                <p>After shipping V1 — a 5-node hybrid pipeline — user testing revealed it was matching, not reasoning. It could filter by player count and game length, but it couldn't interpret the intent behind a contextual request. Rather than patch V1, I rebuilt around a dedicated reasoning layer: a specialized Intent Interpreter node that reasons through the user's request before any matching happens.</p>
+                <p>After shipping V1, I discovered two wrong assumptions at once. The engine was matching on keywords but not reasoning — it couldn't interpret the intent behind a contextual request, only filter on surface constraints. And my entire feedback loop was built on power users, not the casual players I was designing for, so I'd been optimizing for the wrong problems. Rather than patch either one, I rebuilt both: the architecture and the validation methodology.</p>
               </div>
               <div class="cs-section">
                 <h4 class="cs-section-title">What I Did</h4>
