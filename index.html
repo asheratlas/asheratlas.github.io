@@ -1,15 +1,22 @@
-<!-- Portfolio - index.html v1.3 - Last Updated: 2026-03-24 -->
+<!-- Portfolio - index.html v1.5 - Last Updated: 2026-07-12 -->
 <!-- See CHANGELOG.md for version history. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Asher Atlas — Senior Product Manager</title>
-  <meta name="description" content="Senior Product Manager specializing in 0→1 launches, platform scale, and AI systems. 8 years shipping consumer platforms end to end." />
+  <title>Asher Atlas — Senior Product Manager, AI Products &amp; Growth</title>
+  <meta name="description" content="Senior Product Manager with eight years shipping consumer platforms and two independently built AI products. Case studies in 0→1, growth, agent architecture, evaluation, and product strategy." />
   <meta property="og:title" content="Asher Atlas — Senior Product Manager" />
-  <meta property="og:description" content="Senior Product Manager specializing in 0→1 launches, platform scale, and AI systems. 8 years shipping consumer platforms end to end." />
+  <meta property="og:description" content="Product leadership across consumer platforms, 0→1 launches, growth, and evidence-driven AI systems." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.asheratlas.com/social-preview.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Asher Atlas — Senior Product Manager" />
+  <meta name="twitter:description" content="Product leadership across consumer platforms, 0→1 launches, growth, and evidence-driven AI systems." />
+  <meta name="twitter:image" content="https://www.asheratlas.com/social-preview.png" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/png" href="/favicon-32.png" sizes="32x32" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -17,18 +24,22 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner">
-      <span class="nav-logo">AA</span>
+      <a href="#hero" class="nav-logo" aria-label="Asher Atlas — home">AA</a>
       <ul class="nav-links">
+        <li><a href="#writing" class="nav-link">Writing</a></li>
         <li><a href="#work" class="nav-link">Work</a></li>
         <li><a href="#principles" class="nav-link">How I Work</a></li>
-        <li><a href="#writing" class="nav-link">Writing</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
+
+  <main id="main-content">
 
   <!-- HERO -->
   <section class="hero" id="hero">
@@ -37,9 +48,9 @@
         <div class="hero-text">
           <p class="hero-eyebrow fade-in">Product Manager</p>
           <h1 class="hero-name fade-in">Asher Atlas</h1>
-          <p class="hero-subtitle fade-in">0→1 & Growth &nbsp;·&nbsp; Consumer Platforms &nbsp;·&nbsp; AI Systems</p>
+          <p class="hero-subtitle fade-in">0→1 &amp; Growth &nbsp;·&nbsp; Consumer Platforms &nbsp;·&nbsp; AI Systems</p>
           <p class="hero-bio fade-in">
-            I build products that work. Eight years shipping consumer platforms end to end: from zero concurrent users to 8K, from 4 currencies to 120+, and most recently a hybrid AI recommendation system I designed and built myself. I'm happiest when solving a real problem, designing something clean, or untangling messy logic.
+            I build products that work — and AI systems people can trust. Eight years shipping consumer platforms end to end: from zero concurrent users to 8K, from 4 currencies to 120+, plus two independently built AI products spanning recommendations and career decision support. I'm happiest when solving a real problem, designing something clean, or untangling messy logic.
           </p>
           <div class="hero-ctas fade-in">
             <a href="#work" class="btn btn-primary">View Work ↓</a>
@@ -53,43 +64,49 @@
     </div>
   </section>
 
-  <!-- IMPACT BAR -->
-  <section class="impact-bar" aria-label="Key metrics">
-    <div class="impact-scroll">
-      <div class="impact-inner">
-        <div class="metric-chip">
-          <span class="metric-value">8K</span>
-          <span class="metric-label">concurrent viewers</span>
+  <!-- PROOF STRIP -->
+  <section class="proof-strip" aria-label="Selected product outcomes and evaluation evidence">
+    <div class="container">
+      <div class="proof-grid">
+        <div class="proof-item">
+          <span class="proof-value">8K</span>
+          <span class="proof-label">concurrent viewers</span>
         </div>
-        <span class="metric-sep" aria-hidden="true"></span>
-        <div class="metric-chip">
-          <span class="metric-value">+220%</span>
-          <span class="metric-label">chat engagement</span>
+        <div class="proof-item">
+          <span class="proof-value">+15%</span>
+          <span class="proof-label">album purchases after discovery rebuild</span>
         </div>
-        <span class="metric-sep" aria-hidden="true"></span>
-        <div class="metric-chip">
-          <span class="metric-value">120+</span>
-          <span class="metric-label">currencies shipped</span>
+        <div class="proof-item">
+          <span class="proof-value">120+</span>
+          <span class="proof-label">currencies shipped</span>
         </div>
-        <span class="metric-sep" aria-hidden="true"></span>
-        <div class="metric-chip">
-          <span class="metric-value">78%</span>
-          <span class="metric-label">latency reduction (AI)</span>
+        <div class="proof-item">
+          <span class="proof-value">78%</span>
+          <span class="proof-label">AI latency reduction</span>
         </div>
-        <span class="metric-sep" aria-hidden="true"></span>
-        <div class="metric-chip">
-          <span class="metric-value">100%</span>
-          <span class="metric-label">recommendation consistency</span>
+        <div class="proof-item">
+          <span class="proof-value">13 JDs</span>
+          <span class="proof-label">Career Copilot regression set</span>
+        </div>
+        <div class="proof-item">
+          <span class="proof-value">11 models</span>
+          <span class="proof-label">completed analyzer comparison</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PUBLISHED WORK -->
-  <section class="published fade-in-section" id="published">
+  <!-- WRITING & PUBLICATIONS -->
+  <section class="published fade-in-section" id="writing">
     <div class="container">
-      <h2 class="section-title">Published Work</h2>
+      <h2 class="section-title">Writing &amp; Publications</h2>
       <div class="publications-grid">
+        <a href="https://www.linkedin.com/newsletters/the-product-realist-7406176283107209217/" target="_blank" rel="noopener" class="publication-card publication-card--featured">
+          <p class="pub-outlet">Ongoing Newsletter · LinkedIn</p>
+          <p class="pub-title">The Product Realist</p>
+          <p class="pub-desc">An ongoing newsletter on being an AI-native product manager — and what that means for real product work.</p>
+          <span class="pub-link">Read on LinkedIn →</span>
+        </a>
         <a href="https://www.mindtheproduct.com/our-biggest-crisis-was-a-product-strategy-blessing-in-disguise/" target="_blank" rel="noopener" class="publication-card">
           <p class="pub-outlet">Mind The Product</p>
           <p class="pub-title">"Our biggest crisis was a product strategy blessing in disguise"</p>
@@ -101,6 +118,9 @@
           <span class="pub-link">Read article →</span>
         </a>
       </div>
+      <div class="writing-footer">
+        <a href="https://medium.com/@asheratlas" target="_blank" rel="noopener" class="all-writing-link">All articles on Medium →</a>
+      </div>
     </div>
   </section>
 
@@ -108,11 +128,21 @@
   <section class="case-studies fade-in-section" id="work">
     <div class="container">
       <h2 class="section-title">Selected Work</h2>
+      <p class="work-intro">Four product stories across company leadership and independent building. Open a case study for the decisions, tradeoffs, and evidence behind the outcome.</p>
+
+      <div class="work-filters" role="group" aria-label="Filter selected work">
+        <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-chip" data-filter="ai" aria-pressed="false">AI Systems</button>
+        <button type="button" class="filter-chip" data-filter="scale" aria-pressed="false">0→1 &amp; Scale</button>
+        <button type="button" class="filter-chip" data-filter="growth" aria-pressed="false">Growth</button>
+      </div>
+      <p class="work-filter-status" id="work-filter-status" aria-live="polite">4 case studies shown</p>
+
       <div class="cs-list">
 
-        <!-- CASE STUDY 1 -->
-        <article class="cs-card" id="cs-1">
-          <button class="cs-header" aria-expanded="false" aria-controls="cs-1-body">
+        <!-- CASE STUDY: EMUSIC LIVE -->
+        <article class="cs-card" id="work-emusic-live" data-categories="zero-one scale">
+          <button class="cs-header" aria-expanded="false" aria-controls="work-emusic-live-body">
             <div class="cs-header-main">
               <div class="cs-tags">
                 <span class="cs-tag">0→1 Launch</span>
@@ -128,7 +158,7 @@
               </svg>
             </span>
           </button>
-          <div class="cs-body" id="cs-1-body" hidden>
+          <div class="cs-body" id="work-emusic-live-body" hidden>
             <div class="cs-content">
               <div class="cs-section">
                 <h4 class="cs-section-title">Problem</h4>
@@ -159,17 +189,19 @@
           </div>
         </article>
 
-        <!-- CASE STUDY 2 -->
-        <article class="cs-card" id="cs-2">
-          <button class="cs-header" aria-expanded="false" aria-controls="cs-2-body">
+        <!-- CASE STUDY: CAREER COPILOT -->
+        <article class="cs-card" id="work-career-copilot" data-categories="ai">
+          <button class="cs-header" aria-expanded="false" aria-controls="work-career-copilot-body">
             <div class="cs-header-main">
               <div class="cs-tags">
                 <span class="cs-tag">AI Product</span>
-                <span class="cs-tag">Hybrid Architecture</span>
-                <span class="cs-tag">Cost Discipline</span>
+                <span class="cs-tag">Agent Architecture</span>
+                <span class="cs-tag">Eval-Driven Development</span>
+                <span class="cs-tag">Private Beta</span>
               </div>
-              <h3 class="cs-title">Atlas Realms — AI Recommendation System (V2)</h3>
-              <p class="cs-oneliner">Built an AI recommendation engine, discovered two wrong assumptions simultaneously, and rebuilt both.</p>
+              <h3 class="cs-title">Career Copilot — Evidence-First AI Career System</h3>
+              <p class="cs-status">Private beta · Working title</p>
+              <p class="cs-oneliner">Built an agentic resume-tailoring system that separates candidate knowledge construction from per-role generation — and constrains every output to evidence the user can defend.</p>
             </div>
             <span class="cs-toggle" aria-hidden="true">
               <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -177,11 +209,109 @@
               </svg>
             </span>
           </button>
-          <div class="cs-body" id="cs-2-body" hidden>
+          <div class="cs-body" id="work-career-copilot-body" hidden>
             <div class="cs-content">
               <div class="cs-section">
                 <h4 class="cs-section-title">Problem</h4>
-                <p>Board game recommendations are genuinely hard. Player constraints are complex and contextual ("something for 5 people, not too long, my group hates trading"). LLMs hallucinate on incomplete metadata. And users don't trust suggestions that feel mechanically correct but miss the actual situation. Generic AI recommendations weren't solving this.</p>
+                <p>AI resume tools optimize for polished similarity. That creates two trust failures: they can invent or inflate experience, and they can make every candidate sound interchangeable. Product managers need tailoring that reads the role intelligently without turning adjacent experience into expertise they do not have. I also needed the product to work repeatedly for real applications, not just produce one impressive demo.</p>
+              </div>
+              <div class="cs-section">
+                <h4 class="cs-section-title">The Hard Call</h4>
+                <p>The first tailor could produce a strong resume in one model call, but it asked the model to select evidence, rewrite bullets, frame the candidate, and fit the page at once. During dogfooding, one thin but relevant experience could pull the entire resume toward a manufactured specialist identity. I could keep adding prompt rules, or change the system so the failure was harder to create. I chose the architectural reset: separate selection from writing, anchor both to a stable candidate identity, and move mechanical constraints into code.</p>
+              </div>
+              <div class="cs-section">
+                <h4 class="cs-section-title">What I Did</h4>
+                <p class="cs-phase-label">Product strategy</p>
+                <ul class="cs-list-items">
+                  <li>Narrowed the private-beta wedge to reliable resume tailoring and onboarding; kept Jobs, Pipeline, and Interview Prep hidden rather than treating built code as launch-ready product.</li>
+                  <li>Turned founder dogfooding issues into a lane-based roadmap so urgent applications did not erase launch-critical work.</li>
+                  <li>Defined honesty as the product differentiator: every claim should be traceable, reviewable, and interview-defensible.</li>
+                  <li>Designed onboarding around an early reviewable artifact instead of a long AI interview, so a user who pauses still leaves with something useful.</li>
+                </ul>
+                <p class="cs-phase-label">Agent architecture</p>
+                <ul class="cs-list-items">
+                  <li>Split the system into construction-time candidate modeling and a repeated per-job pipeline: Coach → evidence libraries and identity prior; Analyzer → real must-haves and fit read; Tailor → evidence selection, deterministic assembly, and constrained writing.</li>
+                  <li>Replaced free-form bullet rewriting with select-by-ID from a verified library. Selected bullets remain verbatim; the generative surface is primarily title and summary.</li>
+                  <li>Built deterministic A/B/C/F fit scoring from model classifications, distinguishing transferable competencies from non-transferable thresholds.</li>
+                  <li>Added provenance and approval states so extracted or inferred material stays staged until it is reviewed or explicitly promoted.</li>
+                  <li>Used code for metric grounding, structural checks, deduplication, page-fit budgets, and other rules that do not require language judgment.</li>
+                </ul>
+                <p class="cs-phase-label">Evaluation and economics</p>
+                <ul class="cs-list-items">
+                  <li>Built a 13-job-description regression set with founder-labeled directional fit expectations and explicit bad-role traps.</li>
+                  <li>Requested a 12-model analyzer bake-off, compared 11 completed model responses, and selected by failure severity, cost, and threshold judgment rather than generic benchmark ranking.</li>
+                  <li>Rejected an image-context optimization after an N=5 test showed that the honesty-critical trap passed only 1/5 times with image delivery versus 5/5 with text.</li>
+                  <li>Split the tailor between a low-cost selector and a higher-quality constrained writer, reducing the measured path from about $0.042 for the preceding all-Sonnet rank-select call to about $0.019 cold / $0.013 warm per tailoring.</li>
+                  <li>Ran four synthetic candidate personas through onboarding and tailoring. No invented roles or experience were detected; the tests exposed unsupported metric transformations, duplicate role grouping, pseudo-STAR stories, and stale-profile handling, which became concrete fixes.</li>
+                </ul>
+              </div>
+
+              <details class="cs-reveal">
+                <summary class="cs-reveal-summary">See the system flow</summary>
+                <div class="cs-reveal-body">
+                  <div class="flow-diagram">
+                    <span class="flow-step">Coach<br /><small>reviewed evidence + identity</small></span>
+                    <span class="flow-arrow" aria-hidden="true">→</span>
+                    <span class="flow-step">Analyzer<br /><small>must-haves + fit read</small></span>
+                    <span class="flow-arrow" aria-hidden="true">→</span>
+                    <span class="flow-step">Selector<br /><small>evidence by ID</small></span>
+                    <span class="flow-arrow" aria-hidden="true">→</span>
+                    <span class="flow-step">Assembly<br /><small>deterministic fit</small></span>
+                    <span class="flow-arrow" aria-hidden="true">→</span>
+                    <span class="flow-step">Writer<br /><small>title + summary only</small></span>
+                  </div>
+                </div>
+              </details>
+
+              <details class="cs-reveal">
+                <summary class="cs-reveal-summary">See an experiment that changed the product</summary>
+                <div class="cs-reveal-body">
+                  <p>Image delivery compressed the analyzer context dramatically, but the saving damaged the exact distinction the product needed to protect. On the deShaw threshold trap, image delivery produced the correct F only 1/5 times; identical text delivery produced 5/5. The image path was removed. The decision traded a possible token saving for a more reliable honesty-critical read.</p>
+                </div>
+              </details>
+
+              <div class="cs-outcome">
+                <h4 class="cs-section-title">Outcome</h4>
+                <div class="outcome-chips">
+                  <span class="outcome-chip">Private beta — hosted product and core tailoring path</span>
+                  <span class="outcome-chip">13 JDs — repeatable regression set</span>
+                  <span class="outcome-chip">11 models — completed analyzer responses</span>
+                  <span class="outcome-chip">~2.2–3.1× lower tailoring cost vs. prior path</span>
+                  <span class="outcome-chip">4 personas — synthetic onboarding-to-tailoring E2E</span>
+                </div>
+                <p class="cs-qualification">Current evidence is strongest on architecture, regression testing, and founder dogfooding. The first external PM pilot is secured but has not yet begun; broader activation, retention, and outcome validation remain the next proof point.</p>
+              </div>
+              <div class="cs-section cs-skills">
+                <span class="cs-skill-label">Skills:</span>
+                <span>AI Product Strategy · Agent Architecture · Evaluation Design · Model Selection · Trust &amp; Safety · Unit Economics · Product Scoping · Founder Dogfooding</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASE STUDY: ATLAS REALMS -->
+        <article class="cs-card" id="work-atlas-realms" data-categories="ai zero-one">
+          <button class="cs-header" aria-expanded="false" aria-controls="work-atlas-realms-body">
+            <div class="cs-header-main">
+              <div class="cs-tags">
+                <span class="cs-tag">AI Product</span>
+                <span class="cs-tag">Hybrid Architecture</span>
+                <span class="cs-tag">Cost Discipline</span>
+              </div>
+              <h3 class="cs-title">Atlas Realms — AI Recommendation System (V2)</h3>
+              <p class="cs-oneliner">Built an AI recommendation engine, discovered two wrong assumptions simultaneously, and rebuilt both the architecture and the validation loop.</p>
+            </div>
+            <span class="cs-toggle" aria-hidden="true">
+              <svg class="toggle-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </span>
+          </button>
+          <div class="cs-body" id="work-atlas-realms-body" hidden>
+            <div class="cs-content">
+              <div class="cs-section">
+                <h4 class="cs-section-title">Problem</h4>
+                <p>Board game recommendations are genuinely hard. Player constraints are complex and contextual ("something for five people, not too long, my group hates trading"). LLMs hallucinate on incomplete metadata. And users don't trust suggestions that feel mechanically correct but miss the actual situation. Generic AI recommendations weren't solving this.</p>
               </div>
               <div class="cs-section">
                 <h4 class="cs-section-title">The Hard Call</h4>
@@ -191,17 +321,17 @@
                 <h4 class="cs-section-title">What I Did</h4>
                 <p class="cs-phase-label">Architecture</p>
                 <ul class="cs-list-items">
-                  <li>V1: Built a 5-node hybrid pipeline combining deterministic constraint filters with LLM result formatting. Shipped and tested.</li>
-                  <li>Identified that V1 matched on surface keywords but didn't reason — it couldn't understand the tradeoffs behind a complex, contextual request</li>
-                  <li>Ran a structured 6-model evaluation before committing to V2 — selected on failure mode severity, not benchmark scores</li>
-                  <li>V2: Added a dedicated Intent Interpreter node to reason through user requests before passing to the matching pipeline — separating understanding from retrieval</li>
-                  <li>Built a multi-model metadata enrichment pipeline to clean inconsistent fields across the catalog, reducing hallucinations at the reasoning stage</li>
+                  <li>V1: built a five-node hybrid pipeline combining deterministic constraint filters with LLM result formatting; shipped and tested it.</li>
+                  <li>Identified that V1 matched on surface keywords but did not reason through tradeoffs in a complex, contextual request.</li>
+                  <li>Ran a structured six-model evaluation before committing to V2 and selected on failure-mode severity rather than benchmark scores.</li>
+                  <li>Added a dedicated Intent Interpreter to reason through requests before passing them to the matching pipeline.</li>
+                  <li>Built a multi-model metadata-enrichment pipeline to clean inconsistent catalog fields and reduce hallucinations at the reasoning stage.</li>
                 </ul>
                 <p class="cs-phase-label">Validation</p>
                 <ul class="cs-list-items">
-                  <li>Discovered that all early beta testers were power users — not the casual players I was building for — and their feedback was pushing me to solve the wrong problems</li>
-                  <li>Rebuilt validation around the actual target audience; redirected ~40% of planned bug fixes that only affected power-user edge cases</li>
-                  <li>First round of casual-player testing returned immediate positive signal and surfaced real gaps the power-user feedback had masked</li>
+                  <li>Discovered that all early beta testers were power users rather than the casual players the product targeted.</li>
+                  <li>Rebuilt validation around the intended audience and redirected approximately 40% of planned bug fixes that only affected power-user edge cases.</li>
+                  <li>Used the first casual-player testing round to identify gaps the original feedback had masked.</li>
                 </ul>
               </div>
               <div class="cs-outcome">
@@ -209,9 +339,10 @@
                 <div class="outcome-chips">
                   <span class="outcome-chip">78% latency reduction</span>
                   <span class="outcome-chip">65% cost reduction</span>
-                  <span class="outcome-chip">100% recommendation consistency</span>
-                  <span class="outcome-chip">Immediate positive signal from target casual players</span>
+                  <span class="outcome-chip">100% consistency on the defined recommendation regression suite</span>
+                  <span class="outcome-chip">Immediate positive signal from the first target casual-player tests</span>
                 </div>
+                <p class="cs-qualification">The consistency result applies to the defined regression suite; it is not a universal recommendation-accuracy claim.</p>
               </div>
               <div class="cs-section cs-skills">
                 <span class="cs-skill-label">Skills:</span>
@@ -221,9 +352,9 @@
           </div>
         </article>
 
-        <!-- CASE STUDY 3 -->
-        <article class="cs-card" id="cs-3">
-          <button class="cs-header" aria-expanded="false" aria-controls="cs-3-body">
+        <!-- CASE STUDY: SEARCH & DISCOVERY REBUILD -->
+        <article class="cs-card" id="work-search-discovery" data-categories="growth">
+          <button class="cs-header" aria-expanded="false" aria-controls="work-search-discovery-body">
             <div class="cs-header-main">
               <div class="cs-tags">
                 <span class="cs-tag">Growth</span>
@@ -239,7 +370,7 @@
               </svg>
             </span>
           </button>
-          <div class="cs-body" id="cs-3-body" hidden>
+          <div class="cs-body" id="work-search-discovery-body" hidden>
             <div class="cs-content">
               <div class="cs-section">
                 <h4 class="cs-section-title">Problem</h4>
@@ -286,66 +417,38 @@
         <div class="principle-card">
           <span class="principle-num">01</span>
           <h3 class="principle-title">Define the system first</h3>
-          <p class="principle-body">Map constraints, flows, and failure modes before touching solutions.</p>
+          <p class="principle-body">Map the user, constraints, incentives, flows, and failure modes before choosing a solution.</p>
         </div>
         <div class="principle-card">
           <span class="principle-num">02</span>
           <h3 class="principle-title">Build the smallest meaningful version</h3>
-          <p class="principle-body">0→1 isn't about speed. It's about reducing ambiguity.</p>
+          <p class="principle-body">0→1 is not about shipping the most. It is about reducing the most important ambiguity.</p>
         </div>
         <div class="principle-card">
           <span class="principle-num">03</span>
-          <h3 class="principle-title">Validate scrappily</h3>
-          <p class="principle-body">Zoom walls, user interviews, behavioral patterns — whatever gets signal fastest.</p>
+          <h3 class="principle-title">Validate with the right people</h3>
+          <p class="principle-body">Scrappy research is useful only when the participants and test reflect the audience being served.</p>
         </div>
         <div class="principle-card">
           <span class="principle-num">04</span>
-          <h3 class="principle-title">Measure what matters</h3>
-          <p class="principle-body">Metrics that reflect real progress, not dashboard noise.</p>
+          <h3 class="principle-title">Measure decisions, not activity</h3>
+          <p class="principle-body">Use metrics and evals that can change a roadmap, model, or architecture — not numbers that decorate a launch.</p>
         </div>
         <div class="principle-card">
           <span class="principle-num">05</span>
-          <h3 class="principle-title">Use AI where it adds value</h3>
-          <p class="principle-body">Not everywhere. Where it simplifies complexity or accelerates execution.</p>
+          <h3 class="principle-title">Give AI judgment, not every job</h3>
+          <p class="principle-body">Use models for language and ambiguity. Put scoring, constraints, and repeatable rules in deterministic code.</p>
         </div>
         <div class="principle-card">
           <span class="principle-num">06</span>
-          <h3 class="principle-title">Iterate with intention</h3>
-          <p class="principle-body">Ship → observe → tune → repeat.</p>
+          <h3 class="principle-title">Change course when evidence wins</h3>
+          <p class="principle-body">Ship, observe, falsify assumptions, and revise the product without defending sunk work.</p>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- WRITING -->
-  <section class="writing fade-in-section" id="writing">
-    <div class="container">
-      <h2 class="section-title">Writing</h2>
-      <div class="writing-grid">
-        <div class="writing-card writing-card--featured">
-          <p class="writing-label">Building in Public Series</p>
-          <h3 class="writing-title">Building in Public: Atlas Realms AI</h3>
-          <p class="writing-desc">A 4-part series documenting the real process of building an AI product — wrong assumptions, architectural pivots, and what actually shipped.</p>
-          <a href="https://www.linkedin.com/newsletters/7406176283107209217/" target="_blank" rel="noopener" class="btn btn-secondary">Read the series on LinkedIn →</a>
-        </div>
-        <div class="writing-card writing-card--pubs">
-          <p class="writing-label">Featured Publications</p>
-          <ul class="writing-pub-list">
-            <li>
-              <a href="https://www.mindtheproduct.com/our-biggest-crisis-was-a-product-strategy-blessing-in-disguise/" target="_blank" rel="noopener">
-                Mind The Product — "Our biggest crisis was a product strategy blessing in disguise" →
-              </a>
-            </li>
-            <li>
-              <a href="https://medium.productcoalition.com/when-the-music-vanished-how-we-boosted-search-user-retention-b340167b76ef" target="_blank" rel="noopener">
-                Product Coalition — "When the Music Vanished" →
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="writing-footer">
-        <a href="https://medium.com/@asheratlas" target="_blank" rel="noopener" class="all-writing-link">All articles on Medium →</a>
+      <div class="operating-context">
+        <h3 class="operating-context-title">Two operating contexts</h3>
+        <p class="operating-context-body">My company work shows how I lead through engineering, design, marketing, executives, and launch constraints. Atlas Realms and Career Copilot show how I work hands-on when I own the full product and technical loop. Independent building has made me a stronger AI product partner; it is not a substitute for the organizational experience of introducing AI across a larger company.</p>
       </div>
     </div>
   </section>
@@ -355,15 +458,17 @@
     <div class="container">
       <div class="contact-inner">
         <h2 class="contact-heading">Let's talk.</h2>
-        <p class="contact-sub">Exploring a product role, system-heavy problem, or AI-assisted workflow? I'm always up for a conversation.</p>
+        <p class="contact-sub">Exploring a senior product role, an AI system that needs clearer product judgment, or a complex 0→1 problem? I'm always up for a conversation.</p>
         <div class="contact-links">
-          <a href="mailto:atlas.ash8@gmail.com" class="btn btn-primary">Email</a>
+          <a href="mailto:asher@asheratlas.com" class="btn btn-primary">Email</a>
           <a href="https://www.linkedin.com/in/asheratlas/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
           <a href="https://github.com/asheratlas" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
         </div>
       </div>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
