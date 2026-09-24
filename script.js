@@ -185,7 +185,6 @@
     all: null,
     ai: ['ai'],
     scale: ['zero-one', 'scale'],
-    growth: ['growth'],
   };
 
   function cardMatchesFilter(card, filterKey) {
